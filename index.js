@@ -25,8 +25,7 @@ setTimeout(()=>{
 
 console.log("Person 3")
 
-*/
-
+**********************************************************************************
 function fun1(){
     console.log('Fun 1')
 }
@@ -37,3 +36,23 @@ function fun2(){
 
 fun1()
 fun2()
+*************************************************************************************/
+
+async function fetchExamDetails(){
+    return "Exam Info"
+}
+
+async function fetchPaymentDetails(){
+   return "Payment Info"
+}
+
+async function main(){
+
+const examInfo = await fetchExamDetails()
+console.log(examInfo)
+
+const paymentInfo = await fetchPaymentDetails()
+console.log(paymentInfo)
+}
+
+main()
